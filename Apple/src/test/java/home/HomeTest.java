@@ -23,15 +23,15 @@ public class HomeTest extends CommonAPI {
         hm.searchButton("iphone");
     }
     @Test
-    public void testUserCanCheckShoppingBag(){
+    public void testUserCanGoForAdditionalOption(){
         driver.get("https://www.apple.com/");
         HomePage hm = new HomePage();
-        hm.s();
+        hm.clickOnLinkedButton("Learn more");
     }
     @Test
-    public void testUserCanCheck(){
+    public void testUserCanCheckShoppingCart(){
         driver.get("https://www.apple.com/");
         HomePage hm = new HomePage();
-        hm.sh("Learn more");
+        hm.clickOnShoppingCart();
     }
 }

@@ -25,4 +25,7 @@ public class HomePage extends CommonAPI {
         driver.findElement(By.id("globalSearchInputField")).sendKeys(itemName);
         driver.findElement(By.id("searchSubmit")).click();
     }
+    public void shoppingCart(){
+        driver.findElement(By.cssSelector("a[title='shopping bag']")).click();
+    }
 }

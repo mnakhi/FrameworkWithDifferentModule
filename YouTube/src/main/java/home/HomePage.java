@@ -20,4 +20,20 @@ public class HomePage extends CommonAPI {
     public void useHamburgerMenuIcon(){
         driver.findElement(By.xpath("//button[@id='button' and @aria-label='Guide']")).click();
     }
+    public void clickOnSignIn(){
+        driver.findElement(By.cssSelector("ytd-button-renderer[id='sign-in-button']")).click();
+    }
+    public void clickingOnHomeButton(){
+        driver.findElement(By.cssSelector("a[title='Home']")).click();
+    }
+    public void clickingOnTrending(){
+        driver.findElement(By.xpath("//a[@id='endpoint' and @href='/feed/trending']")).click();
+    }
+    public void clickingOnSubscriptions(){
+        driver.findElement(By.cssSelector("a[title='Subscriptions']")).click();
+    }
+    public void clickingOnLibrary(){
+        driver.findElement(By.cssSelector("a[title='Library']")).click();
+    }
 }
+

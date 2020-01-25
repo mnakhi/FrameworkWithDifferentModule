@@ -29,9 +29,39 @@ public class HomeTest extends CommonAPI {
         hp1.useSettings();
     }
     @Test
-    public void testUserCanClickOn(){
+    public void testUserCanClickOnHamburgerMenuIcon(){
         driver.get("https://www.youtube.com/");
         HomePage hp1 = new HomePage();
         hp1.useHamburgerMenuIcon();
+    }
+    @Test
+    public void testUserCanClickOnHome(){
+        driver.get("https://www.youtube.com/");
+        HomePage hp1 = new HomePage();
+        hp1.clickingOnHomeButton();
+    }
+    @Test
+    public void testUserCanClickOnTrending(){
+        driver.get("https://www.youtube.com/");
+        HomePage hp1 = new HomePage();
+        hp1.clickingOnTrending();
+    }
+    @Test
+    public void testUserCanGoToSignInPage(){
+        driver.get("https://www.youtube.com/");
+        HomePage hp1 = new HomePage();
+        hp1.clickOnSignIn();
+    }
+    @Test
+    public void testUserCanGoToSubscriptionPage(){
+        driver.get("https://www.youtube.com/");
+        HomePage hp1 = new HomePage();
+        hp1.clickingOnSubscriptions();
+    }
+    @Test
+    public void testUserCanGoToLibraryPage(){
+        driver.get("https://www.youtube.com/");
+        HomePage hp1 = new HomePage();
+        hp1.clickingOnLibrary();
     }
 }

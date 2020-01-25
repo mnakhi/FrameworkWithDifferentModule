@@ -41,5 +41,10 @@ public class HomeTest extends CommonAPI {
         hm.searchBySearchBox("Coats");
 
     }
-
+    @Test
+    public void testUserCanClickOnShoppingCart() {
+        driver.get("https://www.macys.com/");
+        HomePage hm = new HomePage();
+        hm.shoppingCart();
+    }
 }
